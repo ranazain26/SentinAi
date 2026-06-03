@@ -1,0 +1,58 @@
+[
+  {
+    "id": "CWE-89",
+    "name": "SQL Injection",
+    "description": "Improper neutralization of special elements in SQL commands. Attacker can manipulate database queries.",
+    "remediation": "Use parameterized queries or prepared statements. Never concatenate user input into SQL strings.",
+    "severity": "Critical"
+  },
+  {
+    "id": "CWE-798",
+    "name": "Hardcoded Credentials",
+    "description": "Software contains hardcoded credentials such as passwords, API keys, or tokens.",
+    "remediation": "Store credentials in environment variables or a secrets manager. Never hardcode sensitive values.",
+    "severity": "High"
+  },
+  {
+    "id": "CWE-78",
+    "name": "OS Command Injection",
+    "description": "Improper neutralization of special elements in OS commands.",
+    "remediation": "Avoid shell=True in subprocess calls. Use list arguments and validate all inputs.",
+    "severity": "Critical"
+  },
+  {
+    "id": "CWE-327",
+    "name": "Weak Cryptographic Algorithm",
+    "description": "Use of broken or weak cryptographic algorithms like MD5 or SHA1 for passwords.",
+    "remediation": "Use bcrypt, argon2, or SHA-256+ for password hashing.",
+    "severity": "High"
+  },
+  {
+    "id": "CWE-502",
+    "name": "Deserialization of Untrusted Data",
+    "description": "Deserializing untrusted data can lead to remote code execution.",
+    "remediation": "Avoid pickle/yaml.load with untrusted data. Use json or safe loaders.",
+    "severity": "Critical"
+  },
+  {
+    "id": "CWE-22",
+    "name": "Path Traversal",
+    "description": "Improper limitation of a pathname to a restricted directory.",
+    "remediation": "Validate and sanitize file paths. Use os.path.realpath and check against allowed base directories.",
+    "severity": "High"
+  },
+  {
+    "id": "CWE-338",
+    "name": "Weak PRNG",
+    "description": "Use of cryptographically weak pseudo-random number generator.",
+    "remediation": "Use secrets module or os.urandom() for security-sensitive random values.",
+    "severity": "Medium"
+  },
+  {
+    "id": "CWE-601",
+    "name": "Open Redirect",
+    "description": "Unvalidated redirect to attacker-controlled URL.",
+    "remediation": "Validate redirect URLs against an allowlist of trusted domains.",
+    "severity": "Medium"
+  }
+]

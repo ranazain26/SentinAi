@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A01:2021",
+    "name": "Broken Access Control",
+    "description": "Restrictions on authenticated users not properly enforced.",
+    "remediation": "Implement proper access control checks on every request. Deny by default.",
+    "severity": "Critical"
+  },
+  {
+    "id": "A02:2021",
+    "name": "Cryptographic Failures",
+    "description": "Failures related to cryptography leading to sensitive data exposure.",
+    "remediation": "Encrypt sensitive data at rest and in transit. Use strong algorithms.",
+    "severity": "Critical"
+  },
+  {
+    "id": "A03:2021",
+    "name": "Injection",
+    "description": "SQL, NoSQL, OS, and LDAP injection attacks.",
+    "remediation": "Use parameterized queries, input validation, and escape special characters.",
+    "severity": "Critical"
+  },
+  {
+    "id": "A05:2021",
+    "name": "Security Misconfiguration",
+    "description": "Missing security hardening, improper permissions, unnecessary features enabled.",
+    "remediation": "Follow security hardening guides. Disable debug mode in production.",
+    "severity": "High"
+  },
+  {
+    "id": "A06:2021",
+    "name": "Vulnerable Components",
+    "description": "Using components with known vulnerabilities.",
+    "remediation": "Keep dependencies updated. Use tools like safety or snyk.",
+    "severity": "High"
+  },
+  {
+    "id": "A07:2021",
+    "name": "Authentication Failures",
+    "description": "Weak authentication mechanisms, credential stuffing vulnerabilities.",
+    "remediation": "Implement MFA, rate limiting, and secure session management.",
+    "severity": "Critical"
+  }
+]
